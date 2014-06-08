@@ -9,7 +9,7 @@ $(document).ready(function(){
 	var menuPosition = function() {
 
 		var winHeight = $(window).height();
-		$('#nav-toggle').css({'position':'fixed','left':'-111px','top':winHeight / 2});
+		$('#nav-toggle').css({'position':'fixed','left':'-111px','top':winHeight / 2 - ($('#nav-toggle').height() / 2)});
 
 	};
 

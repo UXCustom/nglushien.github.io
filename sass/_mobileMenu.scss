@@ -14,5 +14,20 @@
 .shiftMenu{
   -webkit-transition:left 0.5s;
   transition:left 0.5s;
-  left:0 !important; 
+  left:0px !important; 
+}
+
+.mobileMenu{
+	list-style:none;
+
+	li{
+		border-bottom: 1px solid #fff;
+		padding-left: 20px;
+		a{
+			color:#fff;
+			font-size: 22px;
+			line-height: 2.5;
+			font-family: helvetica;
+		}
+	}
 }
