@@ -3,5 +3,16 @@
 	background-color:#283b4c;
 	display: block;
 	height:100%;
+	left:-80%;
+	position: absolute;
+	top:0;
 	width:80%;
+	-webkit-transition:left 0.5s;
+	transition:left 0.5s;
+	z-index: 9999;
+}
+.shiftMenu{
+  -webkit-transition:left 0.5s;
+  transition:left 0.5s;
+  left:0% !important; 
 }

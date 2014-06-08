@@ -77,7 +77,7 @@ body {
   transition: left 0.5s;
 }
 
-.shifted {
+.shiftContainer {
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
   left: 80%;
@@ -121,13 +121,33 @@ i {
 }
 
 #nav-toggle {
-  background: rgba(0, 0, 0, 0.25);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(102, 102, 102, 0.5) 0%, rgba(0, 0, 0, 0.5) 73%, rgba(0, 0, 0, 0.5) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(102, 102, 102, 0.5)), color-stop(73%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(102, 102, 102, 0.5) 0%, rgba(0, 0, 0, 0.5) 73%, rgba(0, 0, 0, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(102, 102, 102, 0.5) 0%, rgba(0, 0, 0, 0.5) 73%, rgba(0, 0, 0, 0.5) 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(102, 102, 102, 0.5) 0%, rgba(0, 0, 0, 0.5) 73%, rgba(0, 0, 0, 0.5) 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, rgba(102, 102, 102, 0.75) 0%, rgba(0, 0, 0, 0.75) 73%, #000000 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80666666', endColorstr='#80000000',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
   border-radius: 50%;
+  height: 170px;
   display: block;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  width: 150px;
+  z-index: 0;
 }
 
 .position {
-  position: absolute !important;
+  left: 65.3% !important;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
 }
 
 #nav-toggle {
@@ -136,7 +156,8 @@ i {
 }
 
 #nav-toggle span {
-  left: 12px;
+  top: 50%;
+  right: 10px;
 }
 
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
@@ -190,7 +211,19 @@ i {
   background-color: #283b4c;
   display: block;
   height: 100%;
+  left: -80%;
+  position: absolute;
+  top: 0;
   width: 80%;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  z-index: 9999;
+}
+
+.shiftMenu {
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+  left: 0% !important;
 }
 
 h1 {
