@@ -80,7 +80,7 @@ body {
 .shiftContainer {
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
-  left: 80%;
+  left: 300px;
   position: fixed;
 }
 
@@ -145,7 +145,7 @@ i {
 }
 
 .position {
-  left: 65.3% !important;
+  left: 190px !important;
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
 }
@@ -211,10 +211,10 @@ i {
   background-color: #283b4c;
   display: block;
   height: 100%;
-  left: -80%;
+  left: -300px;
   position: absolute;
   top: 0;
-  width: 80%;
+  width: 300px;
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
   z-index: 9999;
@@ -223,7 +223,7 @@ i {
 .shiftMenu {
   -webkit-transition: left 0.5s;
   transition: left 0.5s;
-  left: 0% !important;
+  left: 0 !important;
 }
 
 h1 {
