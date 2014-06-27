@@ -1,9 +1,16 @@
 extends template
 
 block content
-	.container
-		include navigation
-		include heroImage
-		.content
-	.mobileMenu
-		include mobileMenu
+	include navigation
+	.section1#top
+		.header
+			h1.noah Noah
+			img(src="images/ng.png")
+			h1.glushien Glushien
+		p.intro Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.
+	.section2#design
+		i.fa.fa-picture-o
+		p.designCopy Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.
+	.section3#dev
+		i.fa.fa-code
+		p.devCopy Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.

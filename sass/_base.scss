@@ -3,40 +3,44 @@ html{
 }
 
 body{
-	background-color:#283b4c;
 	height: 100%;
+	margin:0;
 }
 
 *{
 	box-sizing:border-box;
 }
-.container{
-	background:#537185;
-	height: 2000px;
-	left:0;
-	margin: 0 auto;
-	padding: 0;
+.section1{
+	background:#7a7e77 url(../images/canals.jpg)no-repeat center bottom;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	height:1000px;
+	padding-top:40px;
 	position:relative;
-	width:100%; 
-	-webkit-transition:left 0.5s;
-	transition:left 0.5s;
+	width:100%;
 }
 
-.shiftContainer{
-	-webkit-transition:left 0.5s;
-	transition:left 0.5s;
-	left:270px; 
-	position: fixed;
+.section2{
+	background:#bcbbb1 url(../images/louvre.jpg)no-repeat center bottom;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+
+	height:1000px;
+	width:100%;
 }
 
-p{
-	color:#fff;
-	font-family:arial;
-	text-align:center;
-}
+.section3{
+	background:#8f9091 url(../images/luxembourg.jpg)no-repeat center bottom;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 
-i{
-	color:#fff;
-	margin:0 auto;
-	padding:15px 0;
+	height:1000px;
+	width:100%;
 }

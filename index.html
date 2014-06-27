@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" inital-scale="1">
     <title>Noah Glushien</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="screen">
     <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascript/viewportchecker.js"></script>
+    <script src="javascript/easing.js"></script>
     <script src="javascript/script.js"></script>
   </head>
   <body>
-    <div class="container"><a id="nav-toggle" href="#"><span></span></a>
-      <div class="heroImage">
-        <div data-icon="a" class="icon"></div>
-        <h1>Noah Glushien</h1>
+    <div class="navigationContainer"><a href="#top" class="home"> <i class="fa fa-home"> </i><span>Home</span></a><a href="#design" class="design"><i class="fa fa-picture-o"> </i><span>Design</span></a><a href="#dev" class="dev"> <i class="fa fa-code"></i><span>Development</span></a><a href="" class="ux"> <img src="images/ux-icon.png"><span>User Experience</span></a><a href="" class="info"> <i class="fa fa-info-circle"></i><span>Information</span></a><a href="" class="contact"> <i class="fa fa-envelope"></i><span>Contact</span></a></div>
+    <div id="top" class="section1">
+      <div class="header">
+        <h1 class="noah">Noah</h1><img src="images/ng.png">
+        <h1 class="glushien">Glushien</h1>
       </div>
-      <div class="content"></div>
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.</p>
     </div>
-    <div class="mobileMenu">
-      <ul class="mobileMenu">
-        <li><a href>About</a></li>
-        <li><a href>About</a></li>
-        <li><a href>About</a></li>
-        <li><a href>About</a></li>
-        <li><a href>About</a></li>
-      </ul>
+    <div id="design" class="section2"><i class="fa fa-picture-o"></i>
+      <p class="designCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.</p>
+    </div>
+    <div id="dev" class="section3"><i class="fa fa-code"></i>
+      <p class="devCopy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nisi quia perferendis quos ipsam nulla consequuntur dolore reiciendis quis eius, debitis distinctio minima dolor ducimus iure, inventore eligendi sint. Quam.</p>
     </div>
   </body>
 </html>
