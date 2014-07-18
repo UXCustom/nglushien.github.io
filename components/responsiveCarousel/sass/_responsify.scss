@@ -1,0 +1,20 @@
+@media screen and (min-width:640px){
+	body:after {
+		content: 'tablet';
+		display: none;
+	}
+}
+
+@media screen and (min-width:960px){
+	body:after {
+		content: 'laptop';
+		display: none;
+	}
+}
+
+@media screen and (min-width:1280px){
+	body:after {
+		content: 'desktop';
+		display: none;
+	}
+}
