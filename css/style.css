@@ -12,15 +12,13 @@ body {
 }
 
 .section1 {
-  background: #7a7e77 url(../images/canals.jpg) no-repeat center bottom;
+  background: #7a7c77 url(../images/canals.jpg) no-repeat center bottom;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  height: 1000px;
   padding-top: 40px;
   position: relative;
-  width: 100%;
 }
 
 .section2 {
@@ -46,13 +44,31 @@ body {
 .header {
   display: block;
   height: 150px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   overflow: hidden;
-  width: 35%;
+  width: 100%;
 }
 .header img {
-  margin-left: 140px;
-  position: absolute;
+  display: block;
+  height: 75px;
+  margin: 0 auto 15px;
+  width: 75px;
+}
+.header hr {
+  padding: 0;
+  border: none;
+  border-top: medium double #e3e9d9;
+  color: #e3e9d9;
+  text-align: center;
+  width: 20%;
+}
+.header hr:after {
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: transparent;
 }
 
 #design {
@@ -96,24 +112,13 @@ body {
   color: #d7b633;
 }
 
-h1.noah {
+h1 {
   color: #e3e9d9;
-  display: inline;
+  display: block;
   font-family: 'sofia_prolight';
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 100;
-  position: absolute;
-  text-align: center;
-}
-
-h1.glushien {
-  color: #e3e9d9;
-  display: inline;
-  font-family: 'sofia_prolight';
-  font-size: 50px;
-  font-weight: 100;
-  margin-left: 310px;
-  position: absolute;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -126,14 +131,39 @@ h1.glushien {
 }
 
 .intro {
-  color: #e3e9d9;
+  color: #fff;
   display: block;
   font-family: 'sofia_prolight';
-  font-size: 30px;
+  font-size: 46px;
   font-weight: 100;
-  margin: 30px auto 0;
+  line-height: 1.75;
+  position: relative;
   text-align: center;
-  width: 70%;
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+  top: 10%;
+}
+
+.cta {
+  background: #839c5a;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-family: 'sofia_prolight';
+  font-size: 20px;
+  font-weight: 100;
+  height: 60px;
+  margin: 0 auto;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background .5s;
+  top: 130px;
+  width: 200px;
+}
+.cta:hover {
+  background: #687b48;
 }
 
 #design i {
