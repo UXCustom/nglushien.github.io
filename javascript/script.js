@@ -44,6 +44,7 @@ Portfolio.Iteration1 = {
 	},
 
 	hightlightNavItem:function(){
+
 		if($(window).scrollTop() <= 955 ){
 			$('.navigationContainer .home').addClass('active');
 			$('.navigationContainer a').not('.home').removeClass('active');
@@ -57,12 +58,17 @@ Portfolio.Iteration1 = {
 	},
 
 	animateElements:function(){
-		$('.intro').addClass('hidden').viewportChecker({
-			classToAdd: 'visible animated fadeIn',
+	
+		$('#design i').addClass('hidden').viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
 			offset: 100
 		});
-		$('#design,#dev').children().addClass('hidden').viewportChecker({
-			classToAdd: 'visible animated fadeInDownBig',
+		$('#design p').addClass('hidden').viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
+			offset: 100
+		});
+		$('#dev').children().addClass('hidden').viewportChecker({
+			classToAdd: 'visible animated fadeInRight',
 			offset: 100
 		});
 	}

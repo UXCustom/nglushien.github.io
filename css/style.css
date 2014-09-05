@@ -27,8 +27,6 @@ body {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  height: 1000px;
-  width: 100%;
 }
 
 .section3 {
@@ -37,8 +35,6 @@ body {
   -moz-background-size: 100%;
   -o-background-size: 100%;
   background-size: 100%;
-  height: 1000px;
-  width: 100%;
 }
 
 .header {
@@ -60,7 +56,12 @@ body {
   border-top: medium double #e3e9d9;
   color: #e3e9d9;
   text-align: center;
-  width: 20%;
+  width: 50%;
+}
+@media (min-width: 1000px) {
+  .header hr {
+    width: 20%;
+  }
 }
 .header hr:after {
   display: inline-block;
@@ -72,19 +73,29 @@ body {
 }
 
 #design {
-  padding: 90px 0 0;
+  padding: 30px 0 0;
 }
 
+@media (min-width: 1000px) {
+  #design {
+    padding: 70px 0 0;
+  }
+}
 #dev {
-  padding: 70px 0 0;
+  padding: 30px 0 0;
 }
 
+@media (min-width: 1000px) {
+  #dev {
+    padding: 70px 0 0;
+  }
+}
 .navigationContainer {
   background: rgba(49, 49, 49, 0.6);
   height: auto;
   position: fixed;
   top: 45px;
-  width: 130px;
+  width: 60px;
   z-index: 2;
 }
 .navigationContainer a {
@@ -101,17 +112,29 @@ body {
 }
 .navigationContainer a i {
   display: block;
-  font-size: 40px;
+  font-size: 30px;
 }
 .navigationContainer a span {
-  display: block;
-  font-size: 14px;
-  margin: 0 auto;
+  display: none;
 }
 .navigationContainer .active {
   color: #d7b633;
 }
 
+@media (min-width: 1000px) {
+  .navigationContainer {
+    width: 130px;
+  }
+  .navigationContainer a i {
+    display: block;
+    font-size: 40px;
+  }
+  .navigationContainer a span {
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+}
 h1 {
   color: #e3e9d9;
   display: block;
@@ -134,13 +157,15 @@ h1 {
   color: #fff;
   display: block;
   font-family: 'sofia_prolight';
-  font-size: 46px;
+  font-size: 28px;
   font-weight: 100;
   line-height: 1.75;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
-  top: 10%;
+  top: 5%;
+  width: 70%;
 }
 
 .cta {
@@ -159,13 +184,24 @@ h1 {
   text-align: center;
   text-decoration: none;
   transition: background .5s;
-  top: 130px;
+  top: 100px;
   width: 200px;
 }
 .cta:hover {
   background: #687b48;
 }
 
+@media (min-width: 1000px) {
+  .intro {
+    font-size: 46px;
+    top: 10%;
+    width: auto;
+  }
+
+  .cta {
+    top: 130px;
+  }
+}
 #design i {
   color: #575746;
   display: block;
@@ -178,32 +214,66 @@ h1 {
   color: #575746;
   display: block;
   font-family: 'sofia_prolight';
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 100;
   margin: 30px auto 0;
   text-align: center;
-  width: 70%;
+  width: 60%;
 }
 
+@media (min-width: 1000px) {
+  .designCopy {
+    font-size: 30px;
+  }
+}
 #dev i {
   color: #cce8e8;
   display: block;
   font-size: 80px;
   margin: 0 auto;
-  width: 65px;
+  width: 87px;
+}
+
+#design i {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .75s;
+  -webkit-animation-iteration-count: 1;
+}
+
+#design p {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.25s;
+  -webkit-animation-iteration-count: 1;
 }
 
 .devCopy {
   color: #cce8e8;
   display: block;
   font-family: 'sofia_prolight';
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 100;
   margin: 30px auto 0;
   text-align: center;
-  width: 70%;
+  width: 60%;
 }
 
+#dev i {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .75s;
+  -webkit-animation-iteration-count: 1;
+}
+
+#dev p {
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 1.25s;
+  -webkit-animation-iteration-count: 1;
+}
+
+@media (min-width: 1000px) {
+  .devCopy {
+    font-size: 30px;
+  }
+}
 @font-face {
   font-family: 'sofia_prolight';
   src: url("..fonts/sofiaprolight-webfont.eot");

@@ -3,7 +3,7 @@
 	height:auto;
 	position:fixed;
 	top:45px;
-	width:130px;
+	width:60px;
 	z-index:2;
 
 	a{
@@ -21,12 +21,10 @@
 
 		i{
 			display: block;
-			font-size: 40px;
+			font-size: 30px;
 		}
 		span{
-			display: block;
-			font-size: 14px;
-			margin: 0 auto;
+			display: none;
 		}
 
 	}
@@ -34,4 +32,20 @@
 	.active{
 		color:#d7b633;
 	}
+}
+@media (min-width:1000px){
+	.navigationContainer{
+		width: 130px;
+		a{
+			i{
+				display: block;
+				font-size: 40px;
+			}
+			span{
+				display: block;
+				font-size: 14px;
+				margin: 0 auto;
+			}
+		}
+	}	
 }

@@ -17,13 +17,15 @@ h1{
 	color:#fff;
 	display:block;
 	font-family: 'sofia_prolight';
-	font-size:46px;
+	font-size:28px;
 	font-weight:100;
 	line-height:1.75;
+	margin:0 auto;
 	position: relative;
 	text-align:center;
 	text-shadow: 3px 3px 0px rgba(0, 0, 0, .5);
-	top:10%;
+	top:5%;
+	width: 70%; 
 }
 .cta{
 	background:darken(#e3e9d9,40%);
@@ -41,13 +43,24 @@ h1{
 	text-align:center;
 	text-decoration:none;
 	transition:background .5s;
-	top:130px;
+	top:100px;
 	width:200px;
 
 	&:hover{
 		background:darken(#e3e9d9,50%);
 	}
 }
+@media (min-width:1000px){
+	.intro{
+		font-size:46px;
+		top:10%;
+		width: auto;
+	}
+	.cta{
+		top:130px;
+	}
+}
+
 #design{
 	i{
 		color: #575746;
@@ -61,11 +74,16 @@ h1{
 	color:#575746;
 	display:block;
 	font-family: 'sofia_prolight';
-	font-size:30px;
+	font-size:20px;
 	font-weight:100;
 	margin:30px auto 0;
 	text-align:center;
-	width:70%;
+	width:60%;
+}
+@media (min-width:1000px){
+	.designCopy{
+		font-size: 30px;
+	}
 }
 #dev{
 	i{
@@ -73,16 +91,43 @@ h1{
 		display: block;
 		font-size: 80px;
 		margin: 0 auto;
-		width: 65px;
+		width: 87px;
 	}
+}
+#design i{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: .75s;
+	-webkit-animation-iteration-count: 1;
+}
+
+#design p{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1.25s;
+	-webkit-animation-iteration-count: 1;
 }
 .devCopy{
 	color:#cce8e8;
 	display:block;
 	font-family: 'sofia_prolight';
-	font-size:30px;
+	font-size:20px;
 	font-weight:100;
 	margin:30px auto 0;
 	text-align:center;
-	width:70%;
+	width:60%;
+}
+#dev i{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: .75s;
+	-webkit-animation-iteration-count: 1;
+}
+
+#dev p{
+	-webkit-animation-duration: 1s;
+	-webkit-animation-delay: 1.25s;
+	-webkit-animation-iteration-count: 1;
+}
+@media (min-width:1000px){
+	.devCopy{
+		font-size: 30px;
+	}
 }
