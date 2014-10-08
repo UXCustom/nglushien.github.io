@@ -624,6 +624,28 @@ section.works .contact-button {
 	font-weight: 300;
 	letter-spacing: 0.2px;
 	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.work-preview p a{
+	color: #727272;
+	font-family: "Open Sans";
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	line-height: 30px;
+	text-decoration: none;
+	vertical-align: top;
+}
+.work-preview p a:after{
+	color:#727272;
+	content:'\25b8';
+	font-size: 20px;
+	margin-left: 5px;
+	padding-top: 3px;
+}
+.work-preview p a:hover{
+	border-bottom: 1px dotted #727272;
 }
 
 .work-preview .social-icons {
