@@ -39,7 +39,7 @@ header {
 	background-size: cover;
 	cursor: pointer;
 	height: 40px;
-	margin: 26px 0 12px 0;
+	margin: 12px 0;
 	width: 180px;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
@@ -667,8 +667,8 @@ section.works .contact-button {
 }
 
 .work-preview .youtube, .work-preview .vimeo, .work-preview .soundcloud, .work-preview video, .work-preview .slider, .work-preview .image, .work-preview img {
-	background-color: #000000;
-	height: 281px;
+	/*background-color: #000000;*/
+	height: 348px;
 	width: 500px;
 }
 
