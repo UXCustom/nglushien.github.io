@@ -370,8 +370,36 @@ div.who p {
 	padding-top: 20px;
 	width: 260px;
 }
-.who button {
+
+.who .arrow {
+	bottom: 30px;
+	height: 15px;
 	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.who .arrow a {
+	background-image: url(../images/arrow-bottom-who.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+	display: block;
+	height: 15px;
+	margin: 0px auto;
+	opacity: 0.5;
+	text-indent: -9999px;
+	width: 28px;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+
+.who .arrow a:hover {
+	opacity: 1;
 }
 /*who*/
 
@@ -504,6 +532,11 @@ div.skills p {
 	padding-top:40px;
 	padding-bottom:50px;
 	text-transform:uppercase;
+}
+
+.quotes button {
+	margin:60px auto 0;
+	display: block;
 }
 /*Quotes*/
 
